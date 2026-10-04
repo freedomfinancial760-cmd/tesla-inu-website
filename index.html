@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>$TI - Tesla Inu | The Future of Meme</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<title>$TI - Tesla Inu | The Future of Meme to Mars</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Orbitron:wght@700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Space Grotesk',sans-serif;background:#050508;color:#fff;overflow-x:hidden}
+body{font-family:'Space Grotesk',sans-serif;background:#000;color:white;overflow-x:hidden}
 h1,h2,h3{font-family:'Orbitron',sans-serif}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse at 50% -20%, #1e3a8a 0%, #7c3aed 25%, #050508 70%);padding:24px}
-.badge{display:inline-block;padding:8px 18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:100px;font-size:12px;letter-spacing:2px;margin-bottom:20px}
-.hero h1{font-size:clamp(42px,10vw,110px);line-height:.9;background:linear-gradient(180deg,#fff 20%,#00D4FF 50%,#8A2BE2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero .sub{font-size:18px;opacity:.7;max-width:600px;margin:20px auto 35px}
-.btn{display:inline-flex;padding:16px 34px;border-radius:100px;font-weight:700;text-decoration:none;color:#fff;margin:6px}
-.btn-primary{background:linear-gradient(90deg,#00D4FF,#7C3AED);box-shadow:0 0 30px rgba(124,58,237,.5)}
-.btn-secondary{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2)}
-.ca-box{margin:35px auto 0;max-width:680px;background:#121218;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.ca-value{font-family:monospace;font-size:12px;word-break:break-all;color:#00D4FF;text-align:left}
-.copy-btn{background:#fff;color:#000;border:none;padding:10px 18px;border-radius:100px;font-weight:700;cursor:pointer}
+
+/* INI YANG GUE UBAH SHIFU - BACKGROUND JADI GAMBAR LU */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('bg.jpg');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+.badge{display:inline-block;padding:8px 16px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:30px;margin-bottom:20px;backdrop-filter:blur(10px)}
+.hero h1{font-size:clamp(42px,10vw,110px);line-height:0.9;margin:20px 0;text-shadow:0 0 20px #00ff88}
+.hero .sub{font-size:18px;opacity:.7;max-width:600px;margin:0 auto 30px}
+.btn{display:inline-flex;padding:16px 34px;border-radius:50px;text-decoration:none;font-weight:bold;margin:5px}
+.btn-primary{background:linear-gradient(90deg,#00ff88,#00ccff);color:black;box-shadow:0 0 20px rgba(0,255,136,0.5)}
+.btn-secondary{background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(10px)}
+.ca-box{margin:35px auto 0;max-width:680px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:20px;border-radius:15px;backdrop-filter:blur(10px)}
+.ca-value{font-family:monospace;font-size:14px;word-break:break-all;opacity:0.8}
+.copy-btn{background:#fff;color:#000;border:0;padding:8px 16px;border-radius:8px;cursor:pointer;margin-top:10px;font-weight:bold}
 section{padding:80px 24px;max-width:1150px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:30px}
-.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:28px;border-radius:20px}
-.footer{border-top:1px solid rgba(255,255,255,.08);padding:40px;text-align:center;opacity:.5;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,0.1);padding:24px;border-radius:16px;backdrop-filter:blur(10px)}
+.footer{border-top:1px solid rgba(255,255,255,0.1);padding:40px;text-align:center;opacity:0.6}
 </style>
 </head>
 <body>
 <div class="hero">
 <div>
-<div class="badge">⚡ POWERED BY MEME ENERGY</div>
+<div class="badge">⚡ POWERED BY MEME ENERGY TO MARS</div>
 <h1>TESLA<br>INU</h1>
-<p class="sub">The fastest dog in the EV universe. 0% tax, LP burned, community driven.</p>
-<a class="btn btn-primary" href="https://pancakeswap.finance/swap?outputCurrency=0xd75a0cc8614b7c8cac56f5af39d73491c2ea7777" target="_blank">🚀 BUY $TI NOW</a>
-<a class="btn btn-secondary" href="https://dexscreener.com/bsc/0xd75a0cc8614b7c8cac56f5af39d73491c2ea7777" target="_blank">📊 CHART</a>
+<p class="sub">The fastest dog in the galaxy. Riding Starship with Pepe, T-Rex & Samurai Cat to Mars.</p>
+<a href="#" class="btn btn-primary">BUY $TI NOW</a>
+<a href="#" class="btn btn-secondary">VIEW CHART</a>
+
 <div class="ca-box">
-<div style="flex:1">
-<div style="font-size:10px;opacity:.5;letter-spacing:2px;text-align:left">CONTRACT BSC</div>
-<div class="ca-value" id="ca">0xd75a0cc8614b7c8cac56f5af39d73491c2ea7777</div>
+<div>Contract Address:</div>
+<div class="ca-value">0x1234...ABCD GANTI DENGAN CA ASLI LU</div>
+<button class="copy-btn" onclick="navigator.clipboard.writeText('0x1234...ABCD')">COPY CA</button>
 </div>
-<button class="copy-btn" onclick="navigator.clipboard.writeText('0xd75a0cc8614b7c8cac56f5af39d73491c2ea7777');this.innerText='COPIED!'">COPY</button>
+
 </div>
 </div>
-</div>
+
 <section>
-<h2 style="font-size:36px;text-align:center">TOKENOMICS</h2>
 <div class="grid">
-<div class="card"><h3>💰 1B SUPPLY</h3><p>Total 1B $TI, 100% community</p></div>
-<div class="card"><h3>🔥 LP BURNED</h3><p>Liquidity burned forever</p></div>
-<div class="card"><h3>📉 0% TAX</h3><p>No tax, no BS</p></div>
+<div class="card"><h3>🚀 MEME SQUAD</h3><p>Doge, Pepe, T-Rex & Samurai Cat on a carpet. The ultimate meme alliance.</p></div>
+<div class="card"><h3>🪐 TO THE MARS</h3><p>Not just to the moon. We are going to Mars with Elon.</p></div>
+<div class="card"><h3>💎 100% COMMUNITY</h3><p>LP Locked, Ownership Renounced. For the people.</p></div>
 </div>
 </section>
-<div class="footer">TESLA INU © 2026 - 0xd75a...7777</div>
-</div>
+
+<div class="footer">© 2026 Tesla Inu | To The Mars Protocol</div>
 </body>
 </html>
