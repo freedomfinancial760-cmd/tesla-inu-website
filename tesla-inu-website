@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$TI - Tesla Inu</title>
+<style>
+body{margin:0;background:#000;color:white;font-family:Arial;text-align:center}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('bg.jpg');
+  background-size:cover;background-position:center;
+}
+h1{font-size:50px;text-shadow:0 0 15px #00ff88}
+.btn{background:#00ff88;color:black;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="hero">
+<div>
+<h1>TESLA INU<br>TO THE MARS</h1>
+<p>Doge x Pepe x T-Rex x Samurai Cat</p>
+<a href="#" class="btn">BUY $TI NOW</a>
+</div>
+</div>
+</body>
+</html>
