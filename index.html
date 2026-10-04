@@ -3,68 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>$TI - Tesla Inu | The Future of Meme to Mars</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<title>$TI - Tesla Inu | To The Mars</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Space Grotesk',sans-serif;background:#000;color:white;overflow-x:hidden}
-h1,h2,h3{font-family:'Orbitron',sans-serif}
-
-/* INI YANG GUE UBAH SHIFU - BACKGROUND JADI GAMBAR LU */
+body{background:#000;color:#fff;font-family:Arial;text-align:center}
 .hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:40px 20px;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('bg.jpg');
-  background-size:cover;
-  background-position:center;
-  background-attachment:fixed;
+min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)), url('bg.jpg');
+background-size:cover;background-position:center;
 }
-
-.badge{display:inline-block;padding:8px 16px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:30px;margin-bottom:20px;backdrop-filter:blur(10px)}
-.hero h1{font-size:clamp(42px,10vw,110px);line-height:0.9;margin:20px 0;text-shadow:0 0 20px #00ff88}
-.hero .sub{font-size:18px;opacity:.7;max-width:600px;margin:0 auto 30px}
-.btn{display:inline-flex;padding:16px 34px;border-radius:50px;text-decoration:none;font-weight:bold;margin:5px}
-.btn-primary{background:linear-gradient(90deg,#00ff88,#00ccff);color:black;box-shadow:0 0 20px rgba(0,255,136,0.5)}
-.btn-secondary{background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(10px)}
-.ca-box{margin:35px auto 0;max-width:680px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:20px;border-radius:15px;backdrop-filter:blur(10px)}
-.ca-value{font-family:monospace;font-size:14px;word-break:break-all;opacity:0.8}
-.copy-btn{background:#fff;color:#000;border:0;padding:8px 16px;border-radius:8px;cursor:pointer;margin-top:10px;font-weight:bold}
-section{padding:80px 24px;max-width:1150px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,0.1);padding:24px;border-radius:16px;backdrop-filter:blur(10px)}
-.footer{border-top:1px solid rgba(255,255,255,0.1);padding:40px;text-align:center;opacity:0.6}
+h1{font-size:60px;line-height:0.9;text-shadow:0 0 25px #00ff88}
+.sub{opacity:.7;margin:15px auto 25px;max-width:600px}
+.btn{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin:6px}
+.btn-buy{background:#00ff88;color:#000;box-shadow:0 0 20px rgba(0,255,136,.6)}
+.btn-chart{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
+.ca-box{margin:30px auto 0;max-width:560px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:16px;border-radius:16px}
+.ca-value{font-family:monospace;font-size:13px;word-break:break-all;margin:10px 0}
+.copy-btn{background:#fff;color:#000;border:0;padding:8px 18px;border-radius:10px;font-weight:bold;cursor:pointer}
 </style>
 </head>
 <body>
 <div class="hero">
 <div>
-<div class="badge">⚡ POWERED BY MEME ENERGY TO MARS</div>
+<div style="display:inline-block;padding:6px 12px;border-radius:30px;background:rgba(0,255,136,.15);border:1px solid rgba(0,255,136,.3);font-size:11px;margin-bottom:15px">⚡ SOLANA • TO THE MARS</div>
 <h1>TESLA<br>INU</h1>
-<p class="sub">The fastest dog in the galaxy. Riding Starship with Pepe, T-Rex & Samurai Cat to Mars.</p>
-<a href="#" class="btn btn-primary">BUY $TI NOW</a>
-<a href="#" class="btn btn-secondary">VIEW CHART</a>
+<p class="sub">Doge x Pepe x T-Rex & Samurai Cat riding Starship to Mars</p>
+
+<a href="https://pump.fun/coin/DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP" target="_blank" class="btn btn-buy">BUY $TI NOW</a>
+<a href="https://dexscreener.com/solana/DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP" target="_blank" class="btn btn-chart">VIEW CHART</a>
 
 <div class="ca-box">
-<div>Contract Address:</div>
-<div class="ca-value">0x1234...ABCD GANTI DENGAN CA ASLI LU</div>
-<button class="copy-btn" onclick="navigator.clipboard.writeText('0x1234...ABCD')">COPY CA</button>
+<div style="font-size:11px;opacity:.5;letter-spacing:2px">CONTRACT ADDRESS (SOL)</div>
+<div class="ca-value" id="ca">DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP</div>
+<button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('ca').innerText);this.innerText='COPIED!';setTimeout(()=>this.innerText='COPY CA',1500)">COPY CA</button>
 </div>
 
 </div>
 </div>
-
-<section>
-<div class="grid">
-<div class="card"><h3>🚀 MEME SQUAD</h3><p>Doge, Pepe, T-Rex & Samurai Cat on a carpet. The ultimate meme alliance.</p></div>
-<div class="card"><h3>🪐 TO THE MARS</h3><p>Not just to the moon. We are going to Mars with Elon.</p></div>
-<div class="card"><h3>💎 100% COMMUNITY</h3><p>LP Locked, Ownership Renounced. For the people.</p></div>
-</div>
-</section>
-
-<div class="footer">© 2026 Tesla Inu | To The Mars Protocol</div>
 </body>
 </html>
